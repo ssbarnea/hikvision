@@ -1,0 +1,63 @@
+06020203  <- PlayM4_GetSdkVersion()
+1  <- PlayM4_GetPort()
+1  <- PlayM4_SetFileRefCallBack()
+1  <- PlayM4_OpenFile()
+Callback called, file is indexed (1,0)
+1235  <- PlayM4_GetFileTotalFrames()
+1  <- PlayM4_Play(port,0)
+1  <- PlayM4_Pause(port,1)
+Expect 12 but got 0
+Expect 18 but got 25
+Expect 20 but got 25
+Expect 23 but got 26
+Expect 28 but got 25
+Expect 29 but got 25
+Expect 30 but got 25
+Expect 31 but got 25
+Expect 32 but got 25
+Expect 33 but got 25
+Expect 34 but got 25
+Expect 35 but got 25
+Expect 39 but got 50
+Expect 42 but got 51
+Expect 45 but got 51
+Expect 48 but got 51
+Expect 52 but got 50
+Expect 55 but got 50
+Expect 58 but got 50
+Expect 59 but got 50
+Expect 60 but got 50
+Expect 61 but got 50
+Expect 62 but got 50
+Expect 63 but got 50
+Expect 64 but got 50
+Expect 65 but got 50
+Expect 66 but got 50
+Expect 67 but got 50
+Expect 68 but got 50
+Expect 69 but got 50
+Expect 71 but got 75
+Expect 72 but got 100
+Expect 74 but got 76
+Expect 75 but got 100
+Expect 77 but got 100
+Expect 78 but got 75
+Expect 79 but got 100
+Expect 80 but got 75
+Expect 82 but got 101
+Expect 83 but got 75
+Expect 84 but got 100
+Expect 85 but got 75
+Expect 87 but got 100
+Expect 88 but got 75
+Expect 89 but got 100
+Expect 90 but got 103
+Expect 92 but got 100
+Expect 93 but got 75
+Expect 94 but got 100
+Expect 95 but got 75
+Expect 96 but got 100
+Expect 97 but got 75
+Expect 98 but got 100
+Expect 99 but got 75
+Test ended with 54 failures and 46 successes.

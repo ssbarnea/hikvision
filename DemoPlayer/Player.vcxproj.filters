@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e0aa0a1e-15c3-4b5e-955a-74446c806659}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Control - Src">
+      <UniqueIdentifier>{83c81f22-95df-4812-9256-1fff74c62ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AVI - Src">
+      <UniqueIdentifier>{0e5dde86-23bc-49be-a676-47efd3b3df2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{2425297e-60e9-4ddc-8004-0545a2db7a2d}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9672c2e6-45c6-44e2-9857-510518274196}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Control - Hdr">
+      <UniqueIdentifier>{3dc9cda1-df0c-4223-9625-a007b3a344c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AVI - Hdr">
+      <UniqueIdentifier>{0ae598ff-133f-4f48-a4e9-0c19d2c0e50f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{9bb0e7cc-2a44-4dfe-b16f-de605a379a23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CutFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayRect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seek.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetKeyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoCtrlDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WatermarkDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCMenu.cpp">
+      <Filter>Source Files\Control - Src</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>Source Files\Control - Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Source Files\Control - Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FontSize.cpp">
+      <Filter>Source Files\Control - Src</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeCtrl.cpp">
+      <Filter>Source Files\Control - Src</Filter>
+    </ClCompile>
+    <ClCompile Include="XColorStatic.cpp">
+      <Filter>Source Files\Control - Src</Filter>
+    </ClCompile>
+    <ClCompile Include="XScrollBar.cpp">
+      <Filter>Source Files\Control - Src</Filter>
+    </ClCompile>
+    <ClCompile Include="CConvertAVI.cpp">
+      <Filter>Source Files\AVI - Src</Filter>
+    </ClCompile>
+    <ClCompile Include="WRIFF.CPP">
+      <Filter>Source Files\AVI - Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Player.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\+.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\-.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BLACK.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\brightness.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CAPPIC_AT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CAPPIC_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CAPPIC_ENABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\contrast.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FASTBACKWARD_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FASTBACKWARD_ENABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FASTFORWARD_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FASTFORWARD_ENABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\GOTOEND_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\GOTOEND_ENABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\GOTOSTART_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\GOTOSTART_ENABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\HIKVISION.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\HorizontalScrollBarChannel.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\HorizontalScrollBarLeftArrow.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\HorizontalScrollBarRightArrow.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\HorizontalScrollBarThumb.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\HorizontalScrollBarThumbNoColor.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\hue.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\movies.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\overlay.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PAUSE_CHECK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PAUSE_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PAUSE_ENABLE.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PLAY_CHECK.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PLAY_DISABLE.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PLAY_ENABLE.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Player.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\saturation.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SOUND_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SOUND_ENABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\STEPBACKWARD_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\STEPBACKWARD_ENABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\STEPFORWARD_DISABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\STEPFORWARD_ENABLE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\STOP_CHECK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\STOP_DISABLE.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\STOP_ENABLE.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\VerticalScrollBarChannel.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\VerticalScrollBarDownArrow.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\VerticalScrollBarThumb.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\VerticalScrollBarThumbNoColor.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scroll\VerticalScrollBarUpArrow.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\VideoCtrl.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CWatermarkDlg.asp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CutFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Extern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Seek.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetKeyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoCtrlDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vkey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WatermarkDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="watermarkinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCMenu.h">
+      <Filter>Header Files\Control - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>Header Files\Control - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Header Files\Control - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="FontSize.h">
+      <Filter>Header Files\Control - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="memdc.h">
+      <Filter>Header Files\Control - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeCtrl.h">
+      <Filter>Header Files\Control - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="XColorStatic.h">
+      <Filter>Header Files\Control - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="XScrollBar.h">
+      <Filter>Header Files\Control - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="AVIFMT.H">
+      <Filter>Header Files\AVI - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="CConvertAVI.h">
+      <Filter>Header Files\AVI - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="WRIFF.H">
+      <Filter>Header Files\AVI - Hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\PlayM4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

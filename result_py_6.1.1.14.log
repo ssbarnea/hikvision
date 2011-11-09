@@ -1,0 +1,9 @@
+06010114  <- PlayM4_GetSdkVersion()
+1  <- PlayM4_GetPort()
+1  <- PlayM4_SetFileRefCallBack()
+1  <- PlayM4_OpenFile()
+Callback called, file is indexed (1,0)
+1235  <- PlayM4_GetFileTotalFrames()
+1  <- PlayM4_Play(port,0)
+1  <- PlayM4_Pause(port,1)
+Test ended with 0 failures and 100 successes.

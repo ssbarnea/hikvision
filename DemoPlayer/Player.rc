@@ -1,0 +1,764 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Player.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_STOP_DISABLE        ICON    DISCARDABLE     "res\\STOP_DISABLE.ICO"
+IDI_PLAY_DISABLE        ICON    DISCARDABLE     "res\\PLAY_DISABLE.ICO"
+IDI_PLAY_ENABLE         ICON    DISCARDABLE     "res\\PLAY_ENABLE.ICO"
+IDI_STOP_ENABLE         ICON    DISCARDABLE     "res\\STOP_ENABLE.ICO"
+IDI_PAUSE_ENABLE        ICON    DISCARDABLE     "res\\PAUSE_ENABLE.ICO"
+IDI_GOTOSTART_DISABLE   ICON    DISCARDABLE     "res\\GOTOSTART_DISABLE.ico"
+IDI_GOTOSTART_ENABLE    ICON    DISCARDABLE     "res\\GOTOSTART_ENABLE.ico"
+IDI_GOTOEND_ENABLE      ICON    DISCARDABLE     "res\\GOTOEND_ENABLE.ico"
+IDI_SOUND_ENABLE        ICON    DISCARDABLE     "res\\SOUND_ENABLE.ico"
+IDI_SOUND_DISABLE       ICON    DISCARDABLE     "res\\SOUND_DISABLE.ico"
+IDI_STEPBACKWARD_DISABLE ICON    DISCARDABLE     "res\\STEPBACKWARD_DISABLE.ico"
+IDI_STEPBACKWARD_ENABLE ICON    DISCARDABLE     "res\\STEPBACKWARD_ENABLE.ico"
+IDI_STEPFORWARD_DISABLE ICON    DISCARDABLE     "res\\STEPFORWARD_DISABLE.ico"
+IDI_STEPFORWARD_ENABLE  ICON    DISCARDABLE     "res\\STEPFORWARD_ENABLE.ico"
+IDI_STOP_CHECK          ICON    DISCARDABLE     "res\\STOP_CHECK.ico"
+IDI_PLAY_CHECK          ICON    DISCARDABLE     "res\\PLAY_CHECK.ICO"
+IDI_HUE                 ICON    DISCARDABLE     "res\\hue.ico"
+IDI_VIDEOCTRL           ICON    DISCARDABLE     "res\\VideoCtrl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PLUS         BITMAP  DISCARDABLE     "res\\+.bmp"
+IDB_BITMAP_MINUS        BITMAP  DISCARDABLE     "res\\-.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WATERMARK DIALOG DISCARDABLE  0, 0, 120, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Watermark"
+FONT 16, "Arial"
+BEGIN
+    LTEXT           "MAC",IDC_STATIC,2,4,27,8
+    LTEXT           "DeviceSN",IDC_STATIC,2,14,33,9
+    LTEXT           "CH",ID_STATIC,2,25,25,10
+    LTEXT           "GTime",IDC_STATIC,2,37,25,10
+    LTEXT           "DeviceInfo",IDC_STATIC,2,49,36,10
+    LTEXT           "DeviceType",IDC_STATIC,2,61,39,10
+    LTEXT           "",IDC_MAC,41,4,62,8
+    LTEXT           "",IDC_DEVICESN,41,14,62,8
+    LTEXT           "",IDC_CHAN,41,25,62,8
+    LTEXT           "",IDC_GLOBALTIME,41,37,77,8
+    LTEXT           "",IDC_DEVICEINFO,41,49,62,8
+    LTEXT           "",IDC_DEVICETYPE,41,61,62,8
+END
+
+IDD_SET_KEY DIALOG DISCARDABLE  0, 0, 187, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set secret key "
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,27,83,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,82,50,14
+    COMBOBOX        IDC_CB_FORMAT,90,10,64,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Data encryption:",IDC_STATIC,26,12,62,8
+    LTEXT           "Key length:",IDC_STATIC,26,29,62,10
+    COMBOBOX        IDC_CB_LENGTH,90,28,64,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Key format:",IDC_STATIC,26,47,42,10
+    CONTROL         "ASICC",IDC_RAD_ASCII,"Button",BS_AUTORADIOBUTTON,88,48,
+                    31,8
+    CONTROL         "Hex",IDC_RAD_HEX,"Button",BS_AUTORADIOBUTTON,130,48,31,
+                    8
+    LTEXT           "Key:",IDC_STATIC,26,63,18,10
+    EDITTEXT        IDC_EDT_KEY,48,62,106,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_WATERMARK, DIALOG
+    BEGIN
+        RIGHTMARGIN, 119
+    END
+
+    IDD_SET_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\movies.ico"
+IDI_PAUSE_DISABLE       ICON    DISCARDABLE     "res\\PAUSE_DISABLE.ico"
+IDI_FASTFORWARD_DISABLE ICON    DISCARDABLE     "res\\FASTFORWARD_DISABLE.ico"
+IDI_FASTBACKWARD_DISABLE ICON    DISCARDABLE     "res\\FASTBACKWARD_DISABLE.ico"
+IDI_GOTOEND_DISABLE     ICON    DISCARDABLE     "res\\GOTOEND_DISABLE.ico"
+IDI_FASTFORWARD_ENABLE  ICON    DISCARDABLE     "res\\FASTFORWARD_ENABLE.ico"
+IDI_FASTBACKWARD_ENABLE ICON    DISCARDABLE     "res\\FASTBACKWARD_ENABLE.ico"
+IDI_CAPPIC_ENABLE       ICON    DISCARDABLE     "res\\CAPPIC_ENABLE.ico"
+IDI_CAPPIC_AT           ICON    DISCARDABLE     "res\\CAPPIC_AT.ico"
+IDI_PAUSE_CHECK         ICON    DISCARDABLE     "res\\PAUSE_CHECK.ico"
+IDI_CAPPIC_DISABLE      ICON    DISCARDABLE     "res\\CAPPIC_DISABLE.ico"
+IDI_BRIGHTNESS          ICON    DISCARDABLE     "res\\brightness.ico"
+IDI_CONTRAST            ICON    DISCARDABLE     "res\\contrast.ico"
+IDI_SATURATION          ICON    DISCARDABLE     "res\\saturation.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_VERTICAL_SCROLLBAR_UPARROW BITMAP  DISCARDABLE     "res\\scroll\\VerticalScrollBarUpArrow.bmp"
+IDB_HORIZONTAL_SCROLLBAR_CHANNEL BITMAP  DISCARDABLE     "res\\scroll\\HorizontalScrollBarChannel.bmp"
+IDB_HORIZONTAL_SCROLLBAR_LEFTARROW BITMAP  DISCARDABLE     "res\\scroll\\HorizontalScrollBarLeftArrow.bmp"
+IDB_HORIZONTAL_SCROLLBAR_RIGHTARROW BITMAP  DISCARDABLE     "res\\scroll\\HorizontalScrollBarRightArrow.bmp"
+IDB_HORIZONTAL_SCROLLBAR_THUMB BITMAP  DISCARDABLE     "res\\scroll\\HorizontalScrollBarThumb.bmp"
+IDB_HORIZONTAL_SCROLLBAR_THUMB_NO_COLOR BITMAP  DISCARDABLE     "res\\scroll\\HorizontalScrollBarThumbNoColor.bmp"
+IDB_VERTICAL_SCROLLBAR_CHANNEL BITMAP  DISCARDABLE     "res\\scroll\\VerticalScrollBarChannel.bmp"
+IDB_VERTICAL_SCROLLBAR_DOWNARROW BITMAP  DISCARDABLE     "res\\scroll\\VerticalScrollBarDownArrow.bmp"
+IDB_VERTICAL_SCROLLBAR_THUMB BITMAP  DISCARDABLE     "res\\scroll\\VerticalScrollBarThumb.bmp"
+IDB_VERTICAL_SCROLLBAR_THUMB_NO_COLOR BITMAP  DISCARDABLE     "res\\scroll\\VerticalScrollBarThumbNoColor.bmp"
+IDB_BLACK               BITMAP  DISCARDABLE     "res\\BLACK.bmp"
+IDB_HIKVISION           BITMAP  DISCARDABLE     "res\\HIKVISION.bmp"
+IDB_OVERLAY             BITMAP  DISCARDABLE     "res\\overlay.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIDEOCTRL DIALOG DISCARDABLE  0, 0, 115, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Video Control"
+FONT 9, "Arial"
+BEGIN
+    PUSHBUTTON      "",IDC_VC_BRIGHTNESS,15,15,16,15,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_VC_CONTRAST,38,15,16,15,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_VC_SATURATION,86,15,16,15,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_VC_HUE,63,15,16,15,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    CONTROL         "Slider1",IDC_SLIDER_BRIGHTNESS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_TOP | TBS_ENABLESELRANGE | 
+                    WS_TABSTOP,15,40,13,62
+    CONTROL         "Slider1",IDC_SLIDER_CONTRAST,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_TOP | TBS_ENABLESELRANGE | 
+                    WS_TABSTOP,38,40,13,62
+    CONTROL         "Slider1",IDC_SLIDER_SATURATION,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_TOP | TBS_ENABLESELRANGE | 
+                    WS_TABSTOP,86,40,13,62
+    CONTROL         "Slider1",IDC_SLIDER_HUE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_TOP | TBS_ENABLESELRANGE | 
+                    WS_TABSTOP,63,40,13,62
+    PUSHBUTTON      "Reset",IDC_VC_RESET,39,106,38,14,BS_FLAT
+END
+
+IDD_APP_HELP DIALOG DISCARDABLE  0, 0, 178, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Help"
+FONT 8, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,202,50,14
+    GROUPBOX        "Command Line",IDC_STATIC,13,10,151,28
+    GROUPBOX        "Hot Key",IDC_STATIC,14,39,151,160
+    LTEXT           "Command:  player.exe ""File Path""",IDC_STATIC,21,23,
+                    129,8
+    LTEXT           "Double Click:     Normal <-> Full Screen",IDC_STATIC,21,
+                    53,129,8
+    LTEXT           "Space:              Play <-> Pause",IDC_STATIC,21,65,
+                    129,8
+    LTEXT           ". (Dot):              Stop",IDC_STATIC,21,77,129,8
+    LTEXT           "Left:                 Step backward one by one",
+                    IDC_STATIC,21,89,129,8
+    LTEXT           "Right:               Step forward one by one",
+                    IDC_STATIC,21,101,129,8
+    LTEXT           "Up:                   Volume Increase",IDC_STATIC,21,
+                    113,129,8
+    LTEXT           "Down:              Volume Decrease",IDC_STATIC,21,125,
+                    129,8
+    LTEXT           "Ctrl + Left:        Step to first frame",IDC_STATIC,21,
+                    137,129,8
+    LTEXT           "Ctrl + Right:      Step to Last frame",IDC_STATIC,21,
+                    149,129,8
+    LTEXT           "Ctrl + O:           Open the file",IDC_STATIC,21,161,
+                    129,8
+    LTEXT           "Ctrl + C:           Close the file",IDC_STATIC,21,173,
+                    129,8
+    LTEXT           "Ctrl + L:            Locate the file",IDC_STATIC,21,185,
+                    129,8
+END
+
+#if defined(APSTUDIO_INVOKED) || !defined(_FOR_HIKPLAYM4_DLL_)
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About player"
+FONT 8, "Arial"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,24,20,20
+    LTEXT           "VER",IDC_VER,35,28,137,17,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+#endif
+
+IDD_PLAYER_DIALOG DIALOGEX 0, 0, 245, 255
+STYLE DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "Hikvision Player"
+MENU IDR_MAINFRAME
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         182,IDC_SHOW,"Static",SS_BITMAP,0,0,176,144
+    CONTROL         "",IDC_PLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,216,
+                    8,8
+    CONTROL         "",IDC_PAUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,
+                    216,8,8
+    CONTROL         "",IDC_STOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,216,
+                    8,8
+    CONTROL         "",IDC_INTER1,"Static",SS_ETCHEDVERT,50,214,1,16
+    PUSHBUTTON      "",IDC_GOTOSTART,55,214,14,14,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_SLOW,69,214,14,14,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_FAST,83,214,14,14,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_GOTOEND,97,214,14,14,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    CONTROL         "",IDC_INTER2,"Static",SS_ETCHEDVERT,114,214,1,16
+    PUSHBUTTON      "",IDC_STEPBACK,117,214,14,14,BS_ICON | BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "",IDC_STEP,135,214,14,14,BS_ICON | BS_CENTER | 
+                    BS_VCENTER
+    CONTROL         "",IDC_INTER3,"Static",SS_ETCHEDVERT,153,214,1,15
+    PUSHBUTTON      "",IDC_CAPPIC,157,214,14,14,BS_ICON | BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "",IDC_SOUND,174,214,14,14,BS_ICON | BS_CENTER | 
+                    BS_VCENTER
+    CONTROL         "Slider1",IDC_SOUND_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS,203,216,42,12
+    RTEXT           "",IDC_PLAYSTATETEXT,0,237,245,16,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_PLAY_RECT_SLIDER,11,178,220,8,WS_BORDER
+END
+
+IDD_INFO DIALOG DISCARDABLE  0, 0, 252, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Exit",IDOK,152,132,50,14
+    PUSHBUTTON      "Refresh",IDC_REFRESH,43,133,48,13
+    CONTROL         "List1",IDC_LIST_INFO,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,16,17,221,98
+END
+
+IDD_SEEK DIALOG DISCARDABLE  0, 0, 178, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Locate the file position"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Exit",IDOK,115,104,50,14
+    PUSHBUTTON      "Locate",IDC_SEEK,23,104,50,14
+    GROUPBOX        "Type",IDC_STATIC,7,7,163,28
+    CONTROL         "BY_FRAME",IDC_BYFRAME,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,14,18,54,10
+    CONTROL         "BY_TIME",IDC_BYTIME,"Button",BS_AUTORADIOBUTTON,115,19,
+                    47,10
+    GROUPBOX        "Range",IDC_STATIC,7,37,164,34
+    LTEXT           "",IDC_RANGE,8,48,163,22
+    LTEXT           "Frame or Time",IDC_STATIC,19,81,58,8
+    EDITTEXT        IDC_VALUE,86,79,56,14,ES_AUTOHSCROLL
+END
+
+IDD_CUTFILE DIALOG DISCARDABLE  0, 0, 185, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cut file"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Exit",IDOK,140,141,38,14
+    PUSHBUTTON      "save",IDC_SAVE,70,141,38,14
+    PUSHBUTTON      "view",IDC_VIEW,7,141,38,14
+    GROUPBOX        "Type",IDC_STATIC,7,7,163,28
+    CONTROL         "BY_FRAME",IDC_BYFRAME,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,14,18,54,10
+    CONTROL         "BY_TIME",IDC_BYTIME,"Button",BS_AUTORADIOBUTTON,115,19,
+                    47,10
+    GROUPBOX        "Range",IDC_STATIC,7,37,171,34
+    LTEXT           "",IDC_RANGE,15,48,163,22
+    LTEXT           "Start position",IDC_STATIC,7,81,47,13
+    EDITTEXT        IDC_BEGIN,60,78,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REAL_BEGIN,119,79,50,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Stop Position",IDC_STATIC,7,101,47,13
+    EDITTEXT        IDC_END,60,98,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REAL_END,119,99,51,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "File name",IDC_STATIC,7,122,44,10
+    EDITTEXT        IDC_FILENAME,60,120,62,13,ES_AUTOHSCROLL
+END
+
+IDD_RANGE DIALOGEX 0, 0, 198, 224
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_THICKFRAME
+CAPTION "Set Display Rect"
+FONT 10, "ËÎÌו", 0, 0, 0x1
+BEGIN
+    CONTROL         181,IDC_DISWND,"Static",SS_BITMAP | WS_GROUP,0,7,203,180
+    PUSHBUTTON      "default",IDC_DISPLAY,14,201,35,14,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Play",IDOK,94,202,20,14,BS_FLAT
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,121,185,44,9
+    LTEXT           "Zoom:",IDC_STATIC_SIZE,49,187,17,9
+    EDITTEXT        IDC_EDIT_SIZE,66,186,18,12,ES_LOWERCASE | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    LTEXT           "%",IDC_STATIC_PST,94,186,10,12
+    CONTROL         238,IDC_STATIC_PLUS,"Static",SS_BITMAP,167,185,9,10
+    CONTROL         239,IDC_STATIC_MINUS,"Static",SS_BITMAP,113,184,9,10
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_FOR_HIKPLAYM4_DLL_)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(_FOR_HIKPLAYM4_DLL_) DIALOG DISCARDABLE  0, 0, 235, 78
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 78
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About hikvision player"
+FONT 8, "Arial"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,24,20,20
+    LTEXT           "VER",IDC_VER,35,13,137,17,SS_NOPREFIX
+    LTEXT           "Copyright(C)HangZhou Hikvision Digital Technology Co,.Ltd 2002-2008. All rights reserved.",
+                    IDC_STATIC,34,33,187,30
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_VIDEOCTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_APP_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_PLAYER_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_SEEK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_CUTFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_RANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        VERTGUIDE, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    "IDD_ABOUTBOX$(_FOR_HIKPLAYM4_DLL_)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#if defined(APSTUDIO_INVOKED) || !defined(_FOR_HIKPLAYM4_DLL_)
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,8,0,0
+ PRODUCTVERSION 4,8,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Player Microsoft Application\0"
+            VALUE "FileVersion", "4.8.0.0\0"
+            VALUE "InternalName", "Player\0"
+            VALUE "LegalCopyright", "\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Player.exe\0"
+            VALUE "PrivateBuild", "0428\0"
+            VALUE "ProductName", "Player Application\0"
+            VALUE "ProductVersion", "4.8.0.0\0"
+            VALUE "SpecialBuild", "0428\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(_FOR_HIKPLAYM4_DLL_)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(_FOR_HIKPLAYM4_DLL_) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 4,8,0,0
+ PRODUCTVERSION 4,8,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "HangZhou Hikvision Digital Technology Co,.Ltd\0"
+            VALUE "FileDescription", "Player Microsoft Application\0"
+            VALUE "FileVersion", "4.8.0.0\0"
+            VALUE "InternalName", "HikPlayer\0"
+            VALUE "LegalCopyright", "Copyright(C)HangZhou Hikvision Digital Technology Co,.Ltd 2000-2006. All rights reserved.\0"
+            VALUE "LegalTrademarks", "Hikvision is a registered trademark of HangZhou Hikvision Digital Technology Co,.Ltd\0"
+            VALUE "OriginalFilename", "HikPlayer.exe\0"
+            VALUE "PrivateBuild", "0124\0"
+            VALUE "ProductName", "Player Application\0"
+            VALUE "ProductVersion", "4.8.0.0\0"
+            VALUE "SpecialBuild", "0124\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+#endif
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Open...     Ctrl+O",          IDM_FILE_OPEN
+        MENUITEM "Close...    Ctrl+C",          IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+//      MENUITEM "Cut File    Ctrl+T",          IDM_CUT_FILE
+        MENUITEM "Secret Key  Ctrl+K",          IDM_SET_KEY
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    IDM_APP_EXIT
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "FullScreen(&S)\tF2",          IDM_VIEW_FULLSCREEN
+        POPUP "Video size(&Z)"
+        BEGIN
+            MENUITEM "50%",                         IDM_VIEW_ZOOM_50
+            MENUITEM "100%",                        IDM_VIEW_ZOOM_100
+            , CHECKED
+            MENUITEM "200%",                        IDM_VIEW_ZOOM_200
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Information",                 IDM_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "Watermark",                   IDM_WATERMARK
+        MENUITEM SEPARATOR
+        MENUITEM "Multi Display",               IDM_SETDISPLAY
+        MENUITEM SEPARATOR
+        POPUP "Display Device"
+        BEGIN
+            MENUITEM "",                            IDM_TEMP_DEVICE
+        END
+        MENUITEM SEPARATOR
+    END
+    POPUP "Control(&C)"
+    BEGIN
+        MENUITEM "Play/Pause     Space",        IDM_PLAY_PAUSE
+        MENUITEM "Stop           .",            IDM_STOP
+        MENUITEM "Step Forward   -->",          IDM_STEPFORWARD
+        MENUITEM "Step Bacward   <--",          IDM_STEPBACKWARD
+        MENUITEM "Goto Start     Ctrl+<--",     IDM_GOTOSTART
+        MENUITEM "Goto End       Ctrl+-->",     IDM_GOTOEND
+        MENUITEM "Locate To      Ctrl+L",       IDM_SEEK
+        MENUITEM SEPARATOR
+        MENUITEM "Video Control",               IDM_VIDEO_CONTROL
+        MENUITEM SEPARATOR
+        MENUITEM "Rewind",                      IDM_REPEAT
+    END
+    POPUP "Option(&P)"
+    BEGIN
+        MENUITEM "File Stream Input",           IDM_STREAM_TYPE, HELP
+        MENUITEM SEPARATOR
+        MENUITEM "Deflash",                     IDM_DEFLASH, CHECKED
+        MENUITEM "High Image Quality",          IDM_QUALITY, CHECKED
+        MENUITEM "High Fluid",                  IDM_PREVIEW50
+        POPUP "Image Sharpen"
+        BEGIN
+            MENUITEM "none",                        IDM_SHARPEN_NONE
+            , CHECKED
+            MENUITEM "level 1(low)",                IDM_SHARPEN_LEVEL1
+            MENUITEM "level 2",                     IDM_SHARPEN_LEVEL2
+            MENUITEM "level 3",                     IDM_SHARPEN_LEVEL3
+            MENUITEM "level 4",                     IDM_SHARPEN_LEVEL4
+            MENUITEM "level 5",                     IDM_SHARPEN_LEVEL5
+            MENUITEM "level 6(high)",               IDM_SHARPEN_LEVEL6
+        END
+        POPUP "Throw B-Frame"
+        BEGIN
+            MENUITEM "Don't throw",                 IDM_THROW0
+            , CHECKED, HELP
+            MENUITEM "Throw 1 B-Frame",             IDM_THROW1, HELP
+            MENUITEM "Throw 2 B-Frame",             IDM_THROW2, HELP
+        END
+        POPUP "Decode Type"
+        BEGIN
+            MENUITEM "Normal Decode",               IDM_DECODE_NORMAL
+            , CHECKED
+            MENUITEM "Decode I Frame ",             IDM_DECODE_I
+            MENUITEM "None Decode",                 IDM_DECODE_NONE
+        END
+        MENUITEM SEPARATOR
+        POPUP "Display type"
+        BEGIN
+            MENUITEM "Normal",                      IDM_DISNORMAL, CHECKED
+            MENUITEM "Quarter",                     IDM_DISQUARTER
+        END
+        POPUP "Timer Select"
+        BEGIN
+            MENUITEM "Timer_1",                     IDM_TIMER1, CHECKED
+            MENUITEM "Timer_2",                     IDM_TIMER2
+        END
+        MENUITEM "Reset Buffer",                IDM_RESET_BUF
+        MENUITEM SEPARATOR
+        POPUP "Cap Pic Type"
+        BEGIN
+            MENUITEM "BMP",                         IDM_CAP_BMP, CHECKED
+            MENUITEM "JPEG",                        IDM_CAP_JPEG
+        END
+        MENUITEM "Set Cap Pic Path",            IDM_CAPPIC_PATH
+//        MENUITEM SEPARATOR
+//        MENUITEM "Convert to AVI",              IDM_CONVERT
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "Help...",                     IDM_APP_HELP
+        MENUITEM "About...",                    IDM_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "About Player(&A)..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Player.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
