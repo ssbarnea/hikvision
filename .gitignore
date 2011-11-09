@@ -1,1 +1,17 @@
 .svn
+*.ipch
+*.pch
+*.obj
+*.ilk
+*.pdb
+*.tlog
+*.opensdf
+*.sdf
+*.user
+*.aps
+*.opt
+*.plg
+*.old
+**Thumbs.db
+**vssver.scc
+

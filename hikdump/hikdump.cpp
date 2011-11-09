@@ -63,6 +63,10 @@ int main(int argc, char* argv[], char* envp[])
 		Sleep(500);
 	}
 	
+	long width = 0, height = 0;
+	PlayM4_GetPictureSize(port,&width,&height); 
+	cout << width << "x" << height << " <- PlayM4_GetPictureSize()" << endl;
+    
 	int frames = PlayM4_GetFileTotalFrames(port); // STEP-6
     cout << frames << " <- PlayM4_GetFileTotalFrames()" << endl;
 	

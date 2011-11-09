@@ -1,0 +1,16 @@
+== DemoPlayer ==
+Original demo application from Hikvision but converted to VS2010 (from VC6). 
+If you have 2008 you should be able to create a project/workspace and compile it.
+
+Because it is a MFC application you cannot compile it with free versions (Express).
+
+== hikdump ==
+A console Windows application that is used to verify that PlayM4_SetCurrentFrameNum works well.
+
+== hikdump.py ==
+This is a Python script that should do the same thing as hikdump C++ application.
+It was tested only with Python 2.5
+
+== sample.264 ==
+Sample video file used for testing.
+
